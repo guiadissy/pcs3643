@@ -32,3 +32,9 @@ export const FullWidthDivider = styled(Divider)`
  export const PageWrapper = styled.div`
   margin: 8px;
 `;
+
+export const FlexContainer = styled.div`
+  display: flex;
+  align-items: center;
+  place-content: center;
+`;
