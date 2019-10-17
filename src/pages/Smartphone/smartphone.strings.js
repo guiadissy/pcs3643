@@ -8,10 +8,12 @@ export const consultorButtonText = 'Seja um consultor';
 
 export const subtitle = 'O que você quer comprar?';
 
-export const categoria = 'Smartphone';
+export const category = 'Smartphone';
 
 export const title = 'Explique melhor';
 
-export const condicoes = 'Condiçoes';
+export const conditions = 'Condiçoes';
+
+export const wantToPay = 'Quero pagar';
 
 export const estado = 'Estado';
