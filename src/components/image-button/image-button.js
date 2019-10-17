@@ -6,7 +6,7 @@ const ImageButton = (props) => {
   return (
     <ButtonBase>
       <ImageBlock>
-          {props.image}
+          <img src={props.image} />
           <Typography>
             {props.title}
           </Typography>

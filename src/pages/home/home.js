@@ -1,16 +1,14 @@
-import React, { Fragment } from 'react';
-import { Button, Typography, Divider, TextField } from '@material-ui/core'
+import React from 'react';
+import { Button, Typography, TextField } from '@material-ui/core'
 import { Header, AlignLeft, AlignRight, Background, FullWidthDivider, PageWrapper, FlexContainer } from './home.styled';
 import ImageButton from "../../components/image-button/image-button";
 import { companyName, companySlogan, consultorButtonText, enterButtonText, subtitle, continueButtonText } from './home.strings';
-import { ReactComponent as SmartPhoneImg } from "../../assets/images/smart_phone.svg"
-import { ReactComponent as TabletImg } from "../../assets/images/tablet.svg"
-import { ReactComponent as NotebookImg } from "../../assets/images/notebook.svg"
-import { ReactComponent as DesktopImg } from "../../assets/images/desktop.svg"
+import SmartPhoneImg from "../../assets/images/smartphone.png"
+import TabletImg from "../../assets/images/tablet.png"
+import NotebookImg from "../../assets/images/notebook.png"
+import DesktopImg from "../../assets/images/desktop.png"
 
 const Home = () => {
-
-
 
   return (
     <PageWrapper>
@@ -24,13 +22,13 @@ const Home = () => {
           <Button variant="contained" color="primary">{consultorButtonText}</Button>
         </AlignRight>
       </Header>
-          <FullWidthDivider />
-          <FlexContainer>
-              <ImageButton title="SmartPhone" image={<SmartPhoneImg />} />
-              <ImageButton title="Tablet" image={<TabletImg />} />
-              <ImageButton title="Notebook" image={<NotebookImg />} />
-              <ImageButton title="Desktop" image={<DesktopImg />} />
-          </FlexContainer>
+        <FullWidthDivider />
+        <FlexContainer>
+          <ImageButton title="SmartPhone" image={SmartPhoneImg} />
+          <ImageButton title="Tablet" image={TabletImg} />
+          <ImageButton title="Notebook" image={NotebookImg} />
+          <ImageButton title="Desktop" image={DesktopImg} />
+        </FlexContainer>
       <Background>
         <Typography>{subtitle}</Typography>
            <TextField variant="outlined" />
