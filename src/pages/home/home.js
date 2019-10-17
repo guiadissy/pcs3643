@@ -1,5 +1,5 @@
-import React, { Fragment } from 'react';
-import { Button, Typography, Divider, TextField } from '@material-ui/core'
+import React from 'react';
+import { Button, Typography, TextField } from '@material-ui/core'
 import { Header, AlignLeft, AlignRight, Background, FullWidthDivider, PageWrapper, FlexContainer } from './home.styled';
 import ImageButton from "../../components/image-button/image-button";
 import { companyName, companySlogan, consultorButtonText, enterButtonText, subtitle, continueButtonText } from './home.strings';
@@ -24,10 +24,10 @@ const Home = () => {
       </Header>
         <FullWidthDivider />
         <FlexContainer>
-          <ImageButton title="SmartPhone" image={<SmartPhoneImg />} />
-          <ImageButton title="Tablet" image={<TabletImg />} />
-          <ImageButton title="Notebook" image={<NotebookImg />} />
-          <ImageButton title="Desktop" image={<DesktopImg />} />
+          <ImageButton title="SmartPhone" image={SmartPhoneImg} />
+          <ImageButton title="Tablet" image={TabletImg} />
+          <ImageButton title="Notebook" image={NotebookImg} />
+          <ImageButton title="Desktop" image={DesktopImg} />
         </FlexContainer>
       <Background>
         <Typography>{subtitle}</Typography>

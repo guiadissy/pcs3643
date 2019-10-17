@@ -1,20 +1,17 @@
 import React from 'react';
-import {Button, Typography, Divider, TextField} from '@material-ui/core'
-import { Header, AlignLeft, AlignRight, Background, FullWidthDivider, PageWrapper, Body, radioBox, RadioBox } from './smartphone.styled';
-import ImageButton from "../../components/image-button/image-button";
+import {Button, Typography, TextField} from '@material-ui/core'
+import { Header, AlignLeft, AlignRight, FullWidthDivider, PageWrapper, Body } from './smartphone.styled';
 import Smartphone from "../../assets/images/smartphone.png";
-import { companyName, companySlogan, consultorButtonText, enterButtonText, subtitle, categoria, title, condicoes, estado } from './smartphone.strings';
+import { companyName, companySlogan, consultorButtonText, enterButtonText, categoria, title, condicoes } from './smartphone.strings';
 
 const SmartPhone = () => {
-
-
 
   return (
     <PageWrapper>
       <Header>
         <AlignLeft>
           <div>
-            <Smartphone />
+            <img src={Smartphone} />
           </div>
           <div>
             <Typography>{companyName}</Typography>
