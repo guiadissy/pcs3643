@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import backgroudImage from '../../assets/images/smartphone.jfif'
+import backgroudImage from '../../assets/images/background-motherboard.jpg'
 import { Divider } from '@material-ui/core';
 
 export const Header = styled.div`
