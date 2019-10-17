@@ -23,7 +23,6 @@ export const Background = styled.div`
   width: 100%;
   min-height: 1000px;
   background-size: cover;
-  
 `;
 
 export const FullWidthDivider = styled(Divider)`

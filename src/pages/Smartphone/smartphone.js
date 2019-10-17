@@ -1,8 +1,9 @@
 import React from 'react';
-import {Button, Typography, TextField} from '@material-ui/core'
+import { Button, Typography, TextField } from '@material-ui/core'
 import { Header, AlignLeft, AlignRight, FullWidthDivider, PageWrapper, Body } from './smartphone.styled';
 import Smartphone from "../../assets/images/smartphone.png";
-import { companyName, companySlogan, consultorButtonText, enterButtonText, categoria, title, condicoes } from './smartphone.strings';
+import { companyName, companySlogan, consultorButtonText, enterButtonText, category, title, conditions } from './smartphone.strings';
+import Form from '../../components/form/form';
 
 const SmartPhone = () => {
 
@@ -15,7 +16,7 @@ const SmartPhone = () => {
           </div>
           <div>
             <Typography>{companyName}</Typography>
-            <Typography>{categoria}</Typography>
+            <Typography>{category}</Typography>
           </div>
           <Typography>{companySlogan}</Typography>
         </AlignLeft>
@@ -26,12 +27,7 @@ const SmartPhone = () => {
       </Header>
       <FullWidthDivider />
       <Body>
-        <Typography>{title}</Typography>
-        <Typography>{condicoes}</Typography>
-        <AlignLeft>
-
-        </AlignLeft>
-        <TextField variant="outlined" />
+        <Form />
       </Body>
     </PageWrapper>
   );
