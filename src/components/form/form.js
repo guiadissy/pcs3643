@@ -3,6 +3,7 @@ import { TextField, Typography, FormControl, FormControlLabel, Radio, RadioGroup
 import { conditions, title, wantToPay } from "../../pages/Smartphone/smartphone.strings";
 import { AlignLeft, myFragment } from "../../pages/Smartphone/smartphone.styled";
 import Button from '@material-ui/core/Button/Button';
+import {TypographyWithMargin} from "./form.styled";
 
 class NameForm extends React.Component {
   constructor(props) {
@@ -26,14 +27,14 @@ class NameForm extends React.Component {
     return (
       <Fragment>
         <myFragment>
-          <Typography variant="h2">{title}</Typography>
-          <Typography variant="h3">Condicoes</Typography>
+          <Typography variant="h3">{title}</Typography>
+          <TypographyWithMargin marginY="16px" variant="h5">Condicoes</TypographyWithMargin>
           <AlignLeft>
-            <Typography>{wantToPay}</Typography>
+            <TypographyWithMargin marginX="8px" >{wantToPay}</TypographyWithMargin>
             <TextField variant="outlined" placeholder="Preco max" />
           </AlignLeft>
           <AlignLeft>
-            <Typography>{conditions}</Typography>
+            <TypographyWithMargin marginY="8px" marginX="8px">Estado</TypographyWithMargin>
             <FormControl component="fieldset" >
               <RadioGroup name="gender1" >
                 <AlignLeft>
@@ -43,18 +44,18 @@ class NameForm extends React.Component {
               </RadioGroup>
             </FormControl>
           </AlignLeft>
-          <Typography variant="h3">Characteristicas</Typography>
+          <TypographyWithMargin marginY="16px" variant="h5">Characteristicas</TypographyWithMargin>
           <AlignLeft>
-            <Typography>Obrigatorio</Typography>
+            <TypographyWithMargin marginX="8px" >Obrigatorio</TypographyWithMargin>
             <TextField name="name" value={this.state.value} variant="outlined" placeholder="Obrigatorio" />
           </AlignLeft>
           <AlignLeft>
-            <Typography>Diferencias</Typography>
+            <TypographyWithMargin marginX="8px" marginY="8px">Diferencias</TypographyWithMargin>
             <TextField variant="outlined" placeholder="Diferencias" />
           </AlignLeft>
-          <Typography variant="h3">Atividades</Typography>
+          <TypographyWithMargin marginY="8px" variant="h5">Atividades</TypographyWithMargin>
           <AlignLeft>
-            <Typography>Atividades</Typography>
+            <TypographyWithMargin marginX="8px" marginY="8px">Atividades</TypographyWithMargin>
             <TextField variant="outlined" placeholder="Atividades" />
           </AlignLeft>
           <Button type="submit" value="Enviar" variant="contained" color="primary">Continuar</Button>
