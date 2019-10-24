@@ -47,9 +47,9 @@ const Home = () => {
         <FullWidthDivider />
         <FlexContainer>
           <ImageButton title="SmartPhone" image={SmartPhoneImg} onClick={goToSmartPhoneRoute} />
-          <ImageButton title="Tablet" image={TabletImg} onClick={goToSmartPhoneRoute} />
-          <ImageButton title="Notebook" image={NotebookImg} onClick={goToSmartPhoneRoute} />
-          <ImageButton title="Desktop" image={DesktopImg} onClick={goToSmartPhoneRoute} />
+          <ImageButton title="Tablet" image={TabletImg} />
+          <ImageButton title="Notebook" image={NotebookImg} />
+          <ImageButton title="Desktop" image={DesktopImg} />
         </FlexContainer>
       <Background>
         <CustomTypography2 variant="h2">{subtitle}</CustomTypography2>
