@@ -1,11 +1,12 @@
 import React from 'react';
-import Home from '../../pages/Consultor/consultor';
+import Home from '../../pages/home/home';
+import Consultant from '../../pages/Consultor/consultor';
+import SmartPhone from "../../pages/Smartphone/smartphone";
 import { createBrowserHistory } from 'history';
 import { Router, Route, Switch, Redirect } from 'react-router-dom'
 import { baseUrl, consultantUrl, homeUrl, smartphoneUrl } from './Routes.strings';
-import SmartPhone from "../../pages/Smartphone/smartphone";
 
-const history = createBrowserHistory();
+export const history = createBrowserHistory();
 
 const Routes = () => {
 
@@ -19,6 +20,7 @@ const Routes = () => {
           <Home />
         </Route>
         <Route path={consultantUrl}>
+          <Consultant />
         </Route>
         <Route path={smartphoneUrl}>
           <SmartPhone />
