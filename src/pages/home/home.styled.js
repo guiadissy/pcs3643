@@ -9,11 +9,15 @@ export const Header = styled.div`
 
 export const AlignLeft = styled.div`
   display: flex;
+  margin-left: 18px;
+  margin-block: auto;
   align-items: center;
 `;
 
 export const AlignRight = styled.div`
   display: flex;
+  margin-right: 18px;
+  margin-block: auto;
 `;
 
 export const Background = styled.div`
@@ -42,5 +46,5 @@ export const FlexContainer = styled.div`
 `;
 
 export const TypographyWithMargin = styled(Typography)`
-  margin-left: 12px;
+  margin-left: 12px !important;
 `;
