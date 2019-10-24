@@ -4,7 +4,7 @@ import { ImageBlock } from './image-button.styled'
 
 const ImageButton = (props) => {
   return (
-    <ButtonBase>
+    <ButtonBase onClick={props.onClick}>
       <ImageBlock>
           <img src={props.image} />
           <Typography>

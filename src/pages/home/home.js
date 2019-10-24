@@ -7,8 +7,18 @@ import SmartPhoneImg from "../../assets/images/smartphone.png"
 import TabletImg from "../../assets/images/tablet.png"
 import NotebookImg from "../../assets/images/notebook.png"
 import DesktopImg from "../../assets/images/desktop.png"
+import {history} from "../../components/Routes/Routes";
+import {consultantUrl, smartphoneUrl} from "../../components/Routes/Routes.strings";
 
 const Home = () => {
+
+  const goToConsultantRoute = () => {
+    history.push(consultantUrl);
+  };
+
+  const goToSmartPhoneRoute = () => {
+    history.push(smartphoneUrl);
+  };
 
   return (
     <PageWrapper>
@@ -19,15 +29,15 @@ const Home = () => {
         </AlignLeft>
         <AlignRight>
           <Button>{enterButtonText}</Button>
-          <Button variant="contained" color="primary">{consultorButtonText}</Button>
+          <Button variant="contained" color="primary" onClick={goToConsultantRoute}>{consultorButtonText}</Button>
         </AlignRight>
       </Header>
         <FullWidthDivider />
         <FlexContainer>
-          <ImageButton title="SmartPhone" image={SmartPhoneImg} />
-          <ImageButton title="Tablet" image={TabletImg} />
-          <ImageButton title="Notebook" image={NotebookImg} />
-          <ImageButton title="Desktop" image={DesktopImg} />
+          <ImageButton title="SmartPhone" image={SmartPhoneImg} onClick={goToSmartPhoneRoute} />
+          <ImageButton title="Tablet" image={TabletImg} onClick={goToSmartPhoneRoute} />
+          <ImageButton title="Notebook" image={NotebookImg} onClick={goToSmartPhoneRoute} />
+          <ImageButton title="Desktop" image={DesktopImg} onClick={goToSmartPhoneRoute} />
         </FlexContainer>
       <Background>
         <Typography>{subtitle}</Typography>

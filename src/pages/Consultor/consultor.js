@@ -4,6 +4,8 @@ import {Button, Typography, Divider, TextField} from '@material-ui/core'
 import { Header, AlignLeft, AlignRight, Background, FullWidthDivider, PageWrapper, Body, radioBox, RadioBox } from './consultor.styled';
 import { companyName, companySlogan, consultorButtonText, enterButtonText, subtitle, categoria, title, info, email,celular }
     from './consultor.strings';
+import {history} from "../../components/Routes/Routes";
+import {consultantUrl, homeUrl} from "../../components/Routes/Routes.strings";
 
 const useStyles = makeStyles(theme => ({
     textField: {
@@ -14,12 +16,15 @@ const useStyles = makeStyles(theme => ({
 
 const Home = () => {
 
+    const goToHomeRoute = () => {
+        history.push(homeUrl);
+    };
 
 
     return (
         <PageWrapper>
             <Header>
-                <AlignLeft>
+                <AlignLeft onClick={goToHomeRoute}>
                     <Typography>{companyName}</Typography>
                     <Typography>{companySlogan}</Typography>
                 </AlignLeft>
