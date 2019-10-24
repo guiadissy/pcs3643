@@ -8,6 +8,7 @@ import {history} from "../../components/Routes/Routes";
 import {consultantUrl, homeUrl} from "../../components/Routes/Routes.strings";
 import ImageButton from "../../components/image-button/image-button";
 import {FlexContainer, TypographyWithMargin} from "../home/home.styled";
+import {ImageBlock} from "../../components/image-button/image-button.styled";
 
 const SmartPhone = () => {
 
@@ -23,9 +24,12 @@ const SmartPhone = () => {
     <PageWrapper>
       <Header>
         <AlignLeft>
-          <ImageButton title="SmartPhone" image={Smartphone} />
+          <img src={Smartphone} />
           <AlignLeft onClick={goToHomeRoute}>
-            <Typography variant="h4">{companyName}</Typography>
+            <ImageBlock>
+              <Typography variant="h4">{companyName}</Typography>
+              <Typography>{category}</Typography>
+            </ImageBlock>
             <TypographyWithMargin variant="h6">{companySlogan}</TypographyWithMargin>
           </AlignLeft>
         </AlignLeft>
