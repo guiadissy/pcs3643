@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 import backgroudImage from '../../assets/images/background-motherboard.jpg'
-import {Divider, Typography} from '@material-ui/core';
+import { Divider, Typography, TextField } from '@material-ui/core';
 
 export const Header = styled.div`
   display: flex;
@@ -35,6 +35,7 @@ export const FullWidthDivider = styled(Divider)`
   margin: 12px 0 !important;
   background-color: blue !important;
 `;
+
  export const PageWrapper = styled.div`
   margin: 8px;
 `;
@@ -44,6 +45,23 @@ export const FlexContainer = styled.div`
   align-items: center;
   place-content: center;
 `;
+
+export const CustomTypography = styled(Typography) `
+  margin-right: 12px !important;
+  margin-left: 12px !important;
+  margin-top: auto !important;
+`;
+
+export const CustomTypography2 = styled(Typography) `
+  padding: 120px 20px !important;
+`;
+
+export const CustomTextField = styled(TextField) `
+  padding-left: 20px !important;
+  padding-right: 20px !important;
+  width: 300px;
+`;
+
 
 export const TypographyWithMargin = styled(Typography)`
   margin-left: 12px !important;
