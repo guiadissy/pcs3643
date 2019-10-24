@@ -46,5 +46,5 @@ export const FlexContainer = styled.div`
 `;
 
 export const TypographyWithMargin = styled(Typography)`
-  margin-left: 12px;
+  margin-left: 12px !important;
 `;
