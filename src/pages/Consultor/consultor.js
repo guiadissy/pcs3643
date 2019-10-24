@@ -15,7 +15,7 @@ const useStyles = makeStyles(theme => ({
     },
 }));
 
-const Home = () => {
+const Consultor = () => {
 
     const goToHomeRoute = () => {
         history.push(homeUrl);
@@ -60,4 +60,4 @@ const Home = () => {
     );
 };
 
-export default Home;
+export default Consultor;

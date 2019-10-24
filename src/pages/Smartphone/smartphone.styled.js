@@ -16,6 +16,9 @@ export const AlignLeft = styled.div`
 export const AlignRight = styled.div`
   display: flex;
 `;
+export const myFragment = styled.div`
+  width: 50%;
+`;
 
 export const Body = styled.div`
   background-image:
