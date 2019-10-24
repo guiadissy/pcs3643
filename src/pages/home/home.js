@@ -1,6 +1,15 @@
 import React from 'react';
 import { Button, Typography, TextField } from '@material-ui/core'
-import { Header, AlignLeft, AlignRight, Background, FullWidthDivider, PageWrapper, FlexContainer } from './home.styled';
+import {
+  Header,
+  AlignLeft,
+  AlignRight,
+  Background,
+  FullWidthDivider,
+  PageWrapper,
+  FlexContainer,
+  TypographyWithMargin
+} from './home.styled';
 import ImageButton from "../../components/image-button/image-button";
 import { companyName, companySlogan, consultorButtonText, enterButtonText, subtitle, continueButtonText } from './home.strings';
 import SmartPhoneImg from "../../assets/images/smartphone.png"
@@ -24,8 +33,8 @@ const Home = () => {
     <PageWrapper>
       <Header>
         <AlignLeft>
-          <Typography>{companyName}</Typography>
-          <Typography>{companySlogan}</Typography>
+          <Typography variant="h4">{companyName}</Typography>
+          <TypographyWithMargin>{companySlogan}</TypographyWithMargin>
         </AlignLeft>
         <AlignRight>
           <Button>{enterButtonText}</Button>
