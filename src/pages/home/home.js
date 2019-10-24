@@ -53,7 +53,7 @@ const Home = () => {
         </FlexContainer>
       <Background>
         <CustomTypography2 variant="h2">{subtitle}</CustomTypography2>
-          <CustomTextField variant="outlined" />
+          <CustomTextField variant="outlined" placeholder="Insira aqui a sua busca"/>
               <Button variant="contained" color="primary">{continueButtonText}</Button>
       </Background>
     </PageWrapper>
