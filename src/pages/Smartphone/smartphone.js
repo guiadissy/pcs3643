@@ -26,7 +26,7 @@ const SmartPhone = () => {
           <ImageButton title="SmartPhone" image={Smartphone} />
           <AlignLeft onClick={goToHomeRoute}>
             <Typography variant="h4">{companyName}</Typography>
-            <TypographyWithMargin>{companySlogan}</TypographyWithMargin>
+            <TypographyWithMargin variant="h6">{companySlogan}</TypographyWithMargin>
           </AlignLeft>
         </AlignLeft>
         <AlignRight>

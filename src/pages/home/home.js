@@ -8,7 +8,10 @@ import {
   FullWidthDivider,
   PageWrapper,
   FlexContainer,
-  TypographyWithMargin
+  TypographyWithMargin,
+  CustomTypography,
+  CustomTypography2,
+  CustomTextField,
 } from './home.styled';
 import ImageButton from "../../components/image-button/image-button";
 import { companyName, companySlogan, consultorButtonText, enterButtonText, subtitle, continueButtonText } from './home.strings';
@@ -34,7 +37,7 @@ const Home = () => {
       <Header>
         <AlignLeft>
           <Typography variant="h4">{companyName}</Typography>
-          <TypographyWithMargin>{companySlogan}</TypographyWithMargin>
+          <TypographyWithMargin variant="h6">{companySlogan}</TypographyWithMargin>
         </AlignLeft>
         <AlignRight>
           <Button>{enterButtonText}</Button>
@@ -49,8 +52,8 @@ const Home = () => {
           <ImageButton title="Desktop" image={DesktopImg} onClick={goToSmartPhoneRoute} />
         </FlexContainer>
       <Background>
-        <Typography>{subtitle}</Typography>
-           <TextField variant="outlined" />
+        <CustomTypography2 variant="h2">{subtitle}</CustomTypography2>
+          <CustomTextField variant="outlined" />
               <Button variant="contained" color="primary">{continueButtonText}</Button>
       </Background>
     </PageWrapper>
