@@ -5,7 +5,9 @@ import Smartphone from "../../assets/images/smartphone.png";
 import { companyName, companySlogan, consultorButtonText, enterButtonText, category, title, conditions } from './smartphone.strings';
 import Form from '../../components/form/form';
 import {history} from "../../components/Routes/Routes";
-import {homeUrl} from "../../components/Routes/Routes.strings";
+import {consultantUrl, homeUrl} from "../../components/Routes/Routes.strings";
+import ImageButton from "../../components/image-button/image-button";
+import {FlexContainer, TypographyWithMargin} from "../home/home.styled";
 
 const SmartPhone = () => {
 
@@ -13,22 +15,23 @@ const SmartPhone = () => {
     history.push(homeUrl);
   };
 
+  const goToConsultantRoute = () => {
+    history.push(consultantUrl);
+  };
+
   return (
     <PageWrapper>
       <Header>
         <AlignLeft>
-          <div>
-            <img src={Smartphone} />
-          </div>
-          <div onClick={goToHomeRoute}>
-            <Typography>{companyName}</Typography>
-            <Typography>{category}</Typography>
-          </div>
-          <Typography>{companySlogan}</Typography>
+          <ImageButton title="SmartPhone" image={Smartphone} />
+          <AlignLeft onClick={goToHomeRoute}>
+            <Typography variant="h4">{companyName}</Typography>
+            <TypographyWithMargin>{companySlogan}</TypographyWithMargin>
+          </AlignLeft>
         </AlignLeft>
         <AlignRight>
           <Button>{enterButtonText}</Button>
-          <Button variant="contained" color="primary">{consultorButtonText}</Button>
+          <Button variant="contained" color="primary" onClick={goToConsultantRoute}>{consultorButtonText}</Button>
         </AlignRight>
       </Header>
       <FullWidthDivider />

@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 import backgroudImage from '../../assets/images/background-motherboard.jpg'
-import { Divider } from '@material-ui/core';
+import {Divider, Typography} from '@material-ui/core';
 
 export const Header = styled.div`
   display: flex;
@@ -9,6 +9,7 @@ export const Header = styled.div`
 
 export const AlignLeft = styled.div`
   display: flex;
+  align-items: center;
 `;
 
 export const AlignRight = styled.div`
@@ -38,4 +39,8 @@ export const FlexContainer = styled.div`
   display: flex;
   align-items: center;
   place-content: center;
+`;
+
+export const TypographyWithMargin = styled(Typography)`
+  margin-left: 12px;
 `;

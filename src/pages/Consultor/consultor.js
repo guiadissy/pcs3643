@@ -6,6 +6,7 @@ import { companyName, companySlogan, consultorButtonText, enterButtonText, subti
     from './consultor.strings';
 import {history} from "../../components/Routes/Routes";
 import {consultantUrl, homeUrl} from "../../components/Routes/Routes.strings";
+import {TypographyWithMargin} from "../home/home.styled";
 
 const useStyles = makeStyles(theme => ({
     textField: {
@@ -25,8 +26,8 @@ const Home = () => {
         <PageWrapper>
             <Header>
                 <AlignLeft onClick={goToHomeRoute}>
-                    <Typography>{companyName}</Typography>
-                    <Typography>{companySlogan}</Typography>
+                    <Typography variant="h4">{companyName}</Typography>
+                    <TypographyWithMargin>{companySlogan}</TypographyWithMargin>
                 </AlignLeft>
                 <AlignRight>
                     <Button>{enterButtonText}</Button>

@@ -10,6 +10,7 @@ export const Header = styled.div`
 
 export const AlignLeft = styled.div`
   display: flex;
+  align-items: center;
 `;
 
 export const AlignRight = styled.div`
