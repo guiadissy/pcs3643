@@ -26,7 +26,7 @@ class NameForm extends React.Component {
   render() {
     return (
       <Fragment>
-        <myFragment>
+            <form onSubmit={this.handleSubmit}>
           <Typography variant="h3">{title}</Typography>
           <TypographyWithMargin marginY="16px" variant="h5">Condicoes</TypographyWithMargin>
           <AlignLeft>
@@ -47,7 +47,7 @@ class NameForm extends React.Component {
           <TypographyWithMargin marginY="16px" variant="h5">Characteristicas</TypographyWithMargin>
           <AlignLeft>
             <TypographyWithMargin marginX="8px" >Obrigatorio</TypographyWithMargin>
-            <TextField name="name" value={this.state.value} variant="outlined" placeholder="Obrigatorio" />
+                    <TextField name="name" value={this.state.value} onChange={this.handleChange} variant="outlined" placeholder="Obrigatorio" />
           </AlignLeft>
           <AlignLeft>
             <TypographyWithMargin marginX="8px" marginY="8px">Diferencias</TypographyWithMargin>
@@ -59,7 +59,7 @@ class NameForm extends React.Component {
             <TextField variant="outlined" placeholder="Atividades" />
           </AlignLeft>
           <Button type="submit" value="Enviar" variant="contained" color="primary">Continuar</Button>
-        </myFragment>
+            </form>
       </Fragment>
 
     );
