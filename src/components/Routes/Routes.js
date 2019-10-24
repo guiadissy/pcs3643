@@ -1,5 +1,5 @@
 import React from 'react';
-import Home from '../../pages/home/home';
+import Home from '../../pages/Consultor/consultor';
 import { createBrowserHistory } from 'history';
 import { Router, Route, Switch, Redirect } from 'react-router-dom'
 import { baseUrl, consultantUrl, homeUrl, smartphoneUrl } from './Routes.strings';
