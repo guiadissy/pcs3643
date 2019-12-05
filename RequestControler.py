@@ -1,14 +1,15 @@
-from flask_restful import Resource,reqparse
+from flask_restful import Resource, reqparse
 from Request import RequestModel
 import json
 from marshmallow import pprint
 
 
 class RequestControler(Resource):
-    parser=reqparse.RequestParser()
+    parser = reqparse.RequestParser()
     parser.add_argument('req', type=str)
 
-    def post(self):
+    @staticmethod
+    def post():
         try:
             schema = RequestModel()
             data = RequestControler.parser.parse_args()['req']
