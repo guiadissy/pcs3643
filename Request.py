@@ -23,7 +23,7 @@ class RequestModel(Schema):
     def create(self, data, **kwargs):
         return Request(**data)
 
-    def addValue(self,req):
+    def addValue(self, req):
         self.session.add(req)
         self.session.commit()
 

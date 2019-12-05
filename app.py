@@ -7,4 +7,4 @@ app = Flask(__name__)
 api = Api(app)
 cors = CORS(app, resources={r"/*": {"origins": "*"}})
 
-api.add_resource(RequestControler,'/Consulta')
+api.add_resource(RequestControler, '/Consulta')
