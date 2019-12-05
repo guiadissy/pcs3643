@@ -2,7 +2,7 @@ import React from 'react';
 import { Button, Typography, TextField } from '@material-ui/core'
 import { Header, AlignLeft, AlignRight, FullWidthDivider, PageWrapper, Body } from './smartphone.styled';
 import Smartphone from "../../assets/images/smartphone.png";
-import { companyName, companySlogan, consultorButtonText, enterButtonText, category, title, conditions } from './smartphone.strings';
+import { companyName, successText, companySlogan, consultorButtonText, enterButtonText, category, title, conditions } from './smartphone.strings';
 import Form from '../../components/form/form';
 import {history} from "../../components/Routes/Routes";
 import {consultantUrl, homeUrl} from "../../components/Routes/Routes.strings";
@@ -40,10 +40,20 @@ const SmartPhone = () => {
       </Header>
       <FullWidthDivider />
       <Body>
-        <Form />
+         <Form/>
       </Body>
     </PageWrapper>
   );
 };
+
+const SmartPhone_Success = () => {
+
+    return (
+            <Body>
+                <TypographyWithMargin variant="h6">{successText}</TypographyWithMargin>
+            </Body>
+    );
+};
+
 
 export default SmartPhone;
