@@ -17,3 +17,5 @@ export const conditions = 'Condiçoes';
 export const wantToPay = 'Quero pagar';
 
 export const estado = 'Estado';
+
+export const successText='O seu pedido foi criado, Parabens! Os consultores foram notados e voce vai receber um boa oferta em breve!'
