@@ -1,10 +1,11 @@
 import styled from 'styled-components';
 import backgroudImage from '../../assets/images/background-motherboard.jpg'
-import { Divider, Typography, TextField } from '@material-ui/core';
+import { Divider, Typography } from '@material-ui/core';
 
 export const Header = styled.div`
   display: flex;
   justify-content: space-between;
+  margin: 8px;
 `;
 
 export const AlignLeft = styled.div`
@@ -19,16 +20,10 @@ export const AlignRight = styled.div`
   margin-right: 18px;
   margin-block: auto;
 `;
-export const FormBackground = styled.div`
-    padding: 12px 20px !important;
-    margin: 240px 12px !important;
-  background-size: cover;
-`;
-
 
 export const Background = styled.div`
   background-image:
-  linear-gradient(90deg, #FFFFFF 21.42%, rgba(255, 255, 255, 0.62) 65.21%, rgba(255, 255, 255, 0) 100%),
+  linear-gradient(90deg, rgba(255, 255, 255, 0.3) 21.42%, rgba(255, 255, 255, 0.8) 65.21%, rgba(255, 255, 255, 0) 100%),
   url(${backgroudImage});
   height: 100%;
   width: 100%;
@@ -46,29 +41,44 @@ export const FullWidthDivider = styled(Divider)`
   margin: 8px;
 `;
 
+ export const MarginContainer = styled.div`
+   margin: 8px;
+`;
+
+ export const Login_Container = styled.div`
+  border-style: ridge;
+  background-color: white;
+  width: 240px;
+  height:240px;
+`;
+export const Register_Container = styled.div`
+  border-style: ridge;
+  background-color: white;
+  width: 350px;
+  height:550px;
+`;
+
+export const marginBottom = styled.div`
+  margin-bottom: 10px;
+`;
+export const FullWidth = styled.div`
+  display: flex;
+`;
 export const FlexContainer = styled.div`
   display: flex;
+  margin: 8px;
   align-items: center;
   place-content: center;
 `;
-
-export const CustomTypography = styled(Typography) `
-  margin-right: 12px !important;
-  margin-left: 12px !important;
-  margin-top: auto !important;
+export const FlexSpace = styled.div`
+  display: flex;
+  margin: 8px;
+  height:15px;
 `;
 
-export const CustomTypography2 = styled(Typography) `
-  padding: 120px 20px !important;
-`;
-
-export const CustomTextField = styled(TextField) `
-  padding-left: 20px !important;
-  padding-right: 20px !important;
-  width: 300px;
-`;
 
 
 export const TypographyWithMargin = styled(Typography)`
   margin-left: 12px !important;
 `;
+

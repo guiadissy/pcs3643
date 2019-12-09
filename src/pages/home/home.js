@@ -20,7 +20,8 @@ import TabletImg from "../../assets/images/tablet.png"
 import NotebookImg from "../../assets/images/notebook.png"
 import DesktopImg from "../../assets/images/desktop.png"
 import {history} from "../../components/Routes/Routes";
-import {consultantUrl, smartphoneUrl} from "../../components/Routes/Routes.strings";
+import { consultantUrl, smartphoneUrl } from "../../components/Routes/Routes.strings";
+import { Alert, UncontrolledAlert } from 'reactstrap';
 
 const Home = () => {
 
@@ -31,7 +32,6 @@ const Home = () => {
   const goToSmartPhoneRoute = () => {
     history.push(smartphoneUrl);
   };
-
   return (
     <PageWrapper>
       <Header>
@@ -44,7 +44,7 @@ const Home = () => {
           <Button variant="contained" color="primary" onClick={goToConsultantRoute}>{consultorButtonText}</Button>
         </AlignRight>
       </Header>
-        <FullWidthDivider />
+      <FullWidthDivider />
         <FlexContainer>
           <ImageButton title="SmartPhone" image={SmartPhoneImg} onClick={goToSmartPhoneRoute} />
           <ImageButton title="Tablet" image={TabletImg} />

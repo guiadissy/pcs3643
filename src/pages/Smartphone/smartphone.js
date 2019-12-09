@@ -10,50 +10,50 @@ import ImageButton from "../../components/image-button/image-button";
 import {FlexContainer, TypographyWithMargin} from "../home/home.styled";
 import {ImageBlock} from "../../components/image-button/image-button.styled";
 
-const SmartPhone = () => {
+class smartphone extends React.Component {
+    constructor(props) {
+        super(props);
+ 
+        this.goToHomeRoute = this.goToHomeRoute.bind(this);
+        this.goToConsultantRoute = this.goToConsultantRoute.bind(this);
+    }
 
-  const goToHomeRoute = () => {
+  goToHomeRoute(){
     history.push(homeUrl);
   };
 
-  const goToConsultantRoute = () => {
+  goToConsultantRoute(){
     history.push(consultantUrl);
   };
 
-  return (
-    <PageWrapper>
-      <Header>
-        <AlignLeft>
-          <img src={Smartphone} />
-          <AlignLeft onClick={goToHomeRoute}>
-            <ImageBlock>
-              <Typography variant="h4">{companyName}</Typography>
-              <Typography>{category}</Typography>
-            </ImageBlock>
-            <TypographyWithMargin variant="h6">{companySlogan}</TypographyWithMargin>
-          </AlignLeft>
-        </AlignLeft>
-        <AlignRight>
-          <Button>{enterButtonText}</Button>
-          <Button variant="contained" color="primary" onClick={goToConsultantRoute}>{consultorButtonText}</Button>
-        </AlignRight>
-      </Header>
-      <FullWidthDivider />
-      <Body>
-         <Form/>
-      </Body>
-    </PageWrapper>
-  );
-};
-
-const SmartPhone_Success = () => {
-
-    return (
-            <Body>
-                <TypographyWithMargin variant="h6">{successText}</TypographyWithMargin>
-            </Body>
-    );
+  render() {
+      return (
+          <PageWrapper>
+              <Header>
+                  <AlignLeft>
+                      <img src={Smartphone} />
+                      <AlignLeft onClick={this.goToHomeRoute}>
+                          <ImageBlock>
+                              <Typography variant="h4">{companyName}</Typography>
+                              <Typography>{category}</Typography>
+                          </ImageBlock>
+                          <TypographyWithMargin variant="h6">{companySlogan}</TypographyWithMargin>
+                      </AlignLeft>
+                  </AlignLeft>
+                  <AlignRight>
+                      <Button>{enterButtonText}</Button>
+                      <Button variant="contained" color="primary" onClick={this.goToConsultantRoute}>{consultorButtonText}</Button>
+                  </AlignRight>
+              </Header>
+              <FullWidthDivider />
+              <Body>
+                  <Form history={this.props.history}/>
+              </Body>
+          </PageWrapper>
+      );
+    }
+  
 };
 
 
-export default SmartPhone;
+export default smartphone;
