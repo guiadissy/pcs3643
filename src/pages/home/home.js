@@ -32,6 +32,7 @@ const Home = () => {
   const goToSmartPhoneRoute = () => {
     history.push(smartphoneUrl);
   };
+
   return (
     <PageWrapper>
       <Header>
