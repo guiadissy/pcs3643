@@ -15,7 +15,7 @@ class RequestModel(Schema):
     obligatory = fields.Str()
     additional = fields.Str()
     activity = fields.Str()
-    engine = create_engine('mysql://root:Perso387382!@localhost/qualcomp')
+    engine = create_engine('mysql://root:qualcomp19@localhost/qualcomp')
     Session = sessionmaker(bind=engine)
     session = Session()
 
