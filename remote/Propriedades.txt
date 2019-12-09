@@ -1,0 +1,4 @@
+IP		3.81.77.11
+Public DNS 	ec2-3-81-77-11.compute-1.amazonaws.com
+User name 	Administrator
+Password 	39?bD=kbzx&R!%=SrbvRthvTZ9bIwEqX

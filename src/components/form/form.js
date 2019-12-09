@@ -84,7 +84,7 @@ class NameForm extends React.Component {
           eAdditional: false,
           eActivity: false
       }
-      axios.post('http://127.0.0.1:5000/Consulta', { req }
+      axios.post('http://3.81.77.11:5000/Consulta', { req }
       ).catch(error => {
           var obj = JSON.parse(error.response.data);
           this.setState({
