@@ -6,7 +6,8 @@ import Login from "../../pages/login/login";
 import register from "../../pages/register/register";
 import { createBrowserHistory } from 'history';
 import { Router, Route, Switch, Redirect } from 'react-router-dom'
-import { baseUrl, consultantUrl, homeUrl, smartphoneUrl,loginUrl,registerUrl } from './Routes.strings';
+import {baseUrl, consultantUrl, homeUrl, smartphoneUrl, loginUrl, registerUrl, search} from './Routes.strings';
+import Search from "../../pages/search/search";
 
 export const history = createBrowserHistory();
 
@@ -35,6 +36,9 @@ class Routes extends React.Component {
                     </Route>
                     <Route path={smartphoneUrl}>
                         <SmartPhone history={history}/>
+                    </Route>
+                    <Route path={search}>
+                        <Search history={history}/>
                     </Route>
                 </Switch>
             </Router>

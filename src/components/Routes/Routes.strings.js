@@ -10,3 +10,4 @@ export const loginUrl = baseUrl + 'login';
 
 export const registerUrl = baseUrl + 'register';
 
+export const search = baseUrl + 'search';
